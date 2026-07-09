@@ -1,181 +1,159 @@
-# SafeHer AI 🛡️
-> **Intelligent Women Safety Analytics & Intelligence Platform** — Powered by AI
+# SafeHer AI
 
-[![Live Sample](https://img.shields.io/badge/🚀_Live_Sample-SafeHer_AI-f857a6?style=for-the-badge)](https://safeher-ai.vercel.app)
-[![License](https://img.shields.io/badge/License-MIT-a855f7?style=for-the-badge)](LICENSE)
-[![Hackathon](https://img.shields.io/badge/Hackathon-Winner_Candidate-22c55e?style=for-the-badge)]()
+## Overview
 
----
+SafeHer AI is an AI-powered women safety platform designed to improve personal safety through real-time monitoring, AI-based risk prediction, safe route planning, community reporting, and emergency assistance.
 
-## 🎯 Problem
-
-Every **16 minutes**, a crime against women is reported in India.  
-Only **27%** of incidents are ever reported.  
-Average police response time: **18 minutes**.
-
-> Current safety apps are **reactive**. They respond *after* incidents. We predict and prevent them.
+The system combines Artificial Intelligence, Machine Learning, Natural Language Processing, and Location-Based Services to provide proactive safety recommendations and instant emergency support.
 
 ---
 
-## 💡 Solution: SafeHer AI
+## Features
 
-An **AI-powered Women Safety Intelligence Platform** that combines:
-- 🗺️ Real-time interactive crime heatmaps
-- 🤖 72-hour predictive risk forecasting (94.2% accuracy)
-- 🚨 One-press SOS emergency broadcasting
-- 🛤️ AI-powered safe route planning
-- 👩‍👩‍👧 Community safety network
-- 🧠 NLP sentiment analysis on incident reports
-- 📊 Law enforcement analytics dashboard
-
----
-
-## ✨ Key Features
-
-| Feature | Description |
-|---------|-------------|
-| **Live Dashboard** | Real-time stats, incident trends, AI threat gauges |
-| **Safety Heatmap** | Interactive Leaflet.js map with time-filtered danger zones |
-| **AI Analytics** | Predictive charts, NLP sentiment, time-pattern analysis |
-| **Incident Registry** | Full incident management with filtering and search |
-| **Safe Routes** | AI-scored routes based on CCTV, police proximity, risk |
-| **Community Network** | Crowd-sourced safety alerts and champions |
-| **Predictive AI** | 72-hour risk forecast with confidence bands |
-| **SOS System** | Emergency broadcast with GPS and countdown |
+- Secure Login Authentication
+- User, Police/Admin, and NGO Login
+- Google Sign-In and Mobile OTP Login
+- Live Safety Dashboard
+- AI-Based Safety Score
+- Real-Time Incident Monitoring
+- Safety Heatmap
+- AI Analytics and Risk Prediction
+- Incident Management System
+- Safe Route Planning
+- Community Safety Network
+- AI Safety Assistant Chatbot
+- Emergency SOS Alert System
+- Weather-Based Safety Analysis
 
 ---
 
-## 🛠 Tech Stack
+## Technology Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Frontend | HTML5, CSS3, Vanilla JavaScript |
-| Charts | Chart.js 4.x |
-| Maps | Leaflet.js + Leaflet.Heat |
-| Fonts | Inter + Space Grotesk |
-| Backend (prod) | Node.js + Express.js |
-| ML Engine | Python + scikit-learn + LSTM |
-| NLP | HuggingFace Transformers |
-| Database | PostgreSQL + Redis |
-| Hosting | Vercel (frontend) + Render (backend) |
+### Frontend
+- HTML5
+- CSS3
+- Vanilla JavaScript
 
----
+### Backend
+- Node.js
+- Express.js
 
-## 🚀 Quick Start
+### Machine Learning
+- Python
+- Scikit-learn
+- LSTM
 
-```bash
-# Clone the repo
-git clone https://github.com/yourusername/safeher-ai.git
-cd safeher-ai
+### Natural Language Processing
+- Hugging Face Transformers
 
-# No build step needed! Just open in browser:
-start index.html
+### Database
+- PostgreSQL
+- Redis
 
-# Or use live server:
-npx serve .
-```
+### Maps and Visualization
+- Leaflet.js
+- Leaflet Heat
+- Chart.js
 
-## 🧩 Backend Local Setup
-
-```bash
-cd backend
-npm install
-cp .env.example .env
-```
-
-Then open `backend/.env` and configure:
-- `JWT_SECRET` — keep this random and private
-- `APP_URL` — `http://localhost:5000`
-- `MAIL_HOST`, `MAIL_USER`, `MAIL_PASS`, etc. for password reset email delivery
-- `FIREBASE_SERVICE_ACCOUNT_PATH` — path to `backend/firebase/serviceAccountKey.json`
-
-If you prefer not to store a JSON file, set `FIREBASE_SERVICE_ACCOUNT_JSON` instead.
-
-### Start the backend
-
-```bash
-node server.js
-```
-
-Then open:
-- `http://localhost:5000`
-- `http://localhost:5000/auth.html`
-
-> Do not commit `backend/.env` or `backend/firebase/serviceAccountKey.json`. They are already ignored by `.gitignore`.
-
-## 🔐 Secrets and GitHub
-
-This repo now keeps local secrets out of Git:
-- `backend/.env`
-- `backend/firebase/serviceAccountKey.json`
-- `.env`
-
-Firebase web API keys in `firebase.js` are public frontend config and are not secret. The real secret is the Firebase admin service account, which must stay private.
+### Fonts
+- Inter
+- Space Grotesk
 
 ---
 
-## 📸 Screenshots
+## Project Modules
 
-| Dashboard | Safety Heatmap |
-|-----------|---------------|
-| Real-time stats + live feed | Interactive zone risk map |
+### 1. Authentication
+- Email and Password Login
+- Google Authentication
+- Mobile OTP Login
+- Role-Based Access Control
 
-| AI Analytics | Predictive AI |
-|-------------|--------------|
-| Charts + NLP sentiment | 72-hour forecast + alerts |
+### 2. Dashboard
+- Live Safety Score
+- AI Confidence Score
+- Weather Information
+- Incident Statistics
+- SOS Statistics
+- Women Protected Count
+- High-Risk Zones
+
+### 3. Safety Heatmap
+- Risk Zone Visualization
+- Safe Zone Identification
+- CCTV Coverage
+- Police Station Locations
+
+### 4. AI Analytics
+- Incident Trend Analysis
+- Daily Incident Reports
+- Response Time Analysis
+- Predictive Safety Insights
+
+### 5. Incident Registry
+- Incident Reporting
+- Risk Score
+- Incident Status
+- Location Tracking
+- Search and Filter
+
+### 6. Safe Routes
+- Route Planning
+- AI Route Analysis
+- Safest Route Recommendation
+- CCTV-Based Navigation
+
+### 7. Community Network
+- Community Alerts
+- Safety Posts
+- Area Warnings
+- Verified User Reports
+
+### 8. Predictive AI
+- 72-Hour Risk Prediction
+- AI Risk Forecast
+- Risk Factor Analysis
+- Zone Safety Assessment
+
+### 9. AI Safety Assistant
+- Safety Guidance
+- Emergency Assistance
+- User Support
+- Safety Recommendations
+
+### 10. SOS Alert
+- Emergency Alert
+- Live Location Sharing
+- Emergency Contact Notification
+- Nearest Police Station Alert
 
 ---
 
-## 🏗 Architecture
+## Project Workflow
 
-```
-Web App → API Gateway → [Auth | Incident | AI Engine]
-                                        ↓
-                     PostgreSQL | Redis | ML Pipeline
-```
-
----
-
-## 🤖 AI Models
-
-- **Risk Prediction**: Random Forest + LSTM (temporal patterns)  
-  Accuracy: 94.2% | Variables: 50+ | Window: 72 hours
-
-- **Sentiment NLP**: BERT-based classifier on community reports  
-  Detects emerging threats from natural language
-
-- **Route Safety Scoring**: Composite model (CCTV + incidents + distance)
+1. User logs into the application.
+2. Dashboard displays real-time safety information.
+3. AI predicts safety risks based on multiple factors.
+4. Users can view heatmaps and incident reports.
+5. Safe route recommendations are generated.
+6. Community members can report incidents.
+7. AI chatbot provides safety assistance.
+8. SOS alerts are sent during emergencies.
 
 ---
 
-## 🔐 Privacy
+## Future Enhancements
 
-- Location data spatially anonymized (no exact tracking)
-- SOS data ephemeral (deleted after 24 hours)
-- Anonymous reporting always available
-- No data sold to third parties
-
----
-
-## 📊 Impact Potential
-
-- 40% reduction in repeat incidents through preemptive policing
-- 3× faster emergency response via direct GPS dispatch
-- 300% more reports through community network + anonymity
-- 10,000+ women protected per city deployment
+- Mobile Application
+- Voice-Based Emergency Commands
+- Smartwatch Integration
+- CCTV Live Video Analysis
+- Face Recognition
+- Multilingual AI Assistant
+- Offline Emergency Mode
 
 ---
 
-## 👥 Team
+## Conclusion
 
-Built for hackathon by passionate developers who believe technology can make cities safer for women.
-
----
-
-## 📄 License
-
-MIT License — free to use, modify, and deploy for safety initiatives.
-
----
-
-*Made with 💜 — Because Prevention is Safer than Response*
+SafeHer AI is an intelligent women safety platform that combines Artificial Intelligence, Machine Learning, predictive analytics, and real-time monitoring to improve women's safety. The platform helps users identify risks, plan safer routes, receive emergency assistance, and stay connected with their community.
