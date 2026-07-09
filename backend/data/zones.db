@@ -1,0 +1,5 @@
+{"_id":"1c2d35fd-bc3c-437f-81aa-63fc465a0640","name":"Women Police Station","type":"police","latitude":28.625,"longitude":77.205,"radius_meters":300,"is_active":true}
+{"_id":"acc6da70-88c0-4852-a2d9-127ed0547bd7","name":"Community Safe Hub 1","type":"community","latitude":28.632,"longitude":77.211,"radius_meters":200,"is_active":true}
+{"_id":"aee616f2-256b-4c3f-acf2-b18b46264581","name":"Metro Station Safety","type":"police","latitude":28.64,"longitude":77.223,"radius_meters":200,"is_active":true}
+{"_id":"dc59b9d5-1525-466e-9a28-18ac9c82142b","name":"City Hospital","type":"hospital","latitude":28.618,"longitude":77.218,"radius_meters":250,"is_active":true}
+{"_id":"f266fbae-3c3c-40b8-8949-aa56b198a3ee","name":"Crisis Care Center","type":"hospital","latitude":28.61,"longitude":77.2,"radius_meters":200,"is_active":true}
