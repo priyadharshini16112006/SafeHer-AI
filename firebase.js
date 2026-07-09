@@ -28,6 +28,7 @@ export {
   signInWithPopup,
   signInWithRedirect,
   getRedirectResult,
+  signOut,
   RecaptchaVerifier,
   signInWithPhoneNumber
 };

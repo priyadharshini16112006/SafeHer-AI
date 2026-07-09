@@ -1,1 +1,4 @@
 node_modules
+backend/firebase/serviceAccountKey.json
+backend/.env
+.env

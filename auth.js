@@ -5,7 +5,8 @@ import {
   googleProvider,
   signInWithPopup,
   signInWithRedirect,
-  getRedirectResult
+  getRedirectResult,
+  signOut
 } from "./firebase.js";
 
 const AUTH_API  = 'http://localhost:5000/api/auth';

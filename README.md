@@ -75,6 +75,43 @@ start index.html
 npx serve .
 ```
 
+## 🧩 Backend Local Setup
+
+```bash
+cd backend
+npm install
+cp .env.example .env
+```
+
+Then open `backend/.env` and configure:
+- `JWT_SECRET` — keep this random and private
+- `APP_URL` — `http://localhost:5000`
+- `MAIL_HOST`, `MAIL_USER`, `MAIL_PASS`, etc. for password reset email delivery
+- `FIREBASE_SERVICE_ACCOUNT_PATH` — path to `backend/firebase/serviceAccountKey.json`
+
+If you prefer not to store a JSON file, set `FIREBASE_SERVICE_ACCOUNT_JSON` instead.
+
+### Start the backend
+
+```bash
+node server.js
+```
+
+Then open:
+- `http://localhost:5000`
+- `http://localhost:5000/auth.html`
+
+> Do not commit `backend/.env` or `backend/firebase/serviceAccountKey.json`. They are already ignored by `.gitignore`.
+
+## 🔐 Secrets and GitHub
+
+This repo now keeps local secrets out of Git:
+- `backend/.env`
+- `backend/firebase/serviceAccountKey.json`
+- `.env`
+
+Firebase web API keys in `firebase.js` are public frontend config and are not secret. The real secret is the Firebase admin service account, which must stay private.
+
 ---
 
 ## 📸 Screenshots

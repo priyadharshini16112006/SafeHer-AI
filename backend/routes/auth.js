@@ -6,6 +6,18 @@ const admin = require("../firebase/firebaseAdmin");
 const { getAuth } = require('firebase-admin/auth');
 const express = require('express');
 const router  = express.Router();
+
+function getFirebaseAdminAuth() {
+  try {
+    if (admin.getApps && admin.getApps().length) {
+      return getAuth(admin.getApp());
+    }
+    return null;
+  } catch (err) {
+    console.warn('Firebase auth helper failed:', err && err.message ? err.message : err);
+    return null;
+  }
+}
 const jwt     = require('jsonwebtoken');
 const bcrypt  = require('bcrypt');
 const nodemailer = require('nodemailer');
@@ -270,7 +282,14 @@ router.post('/google', async (req, res) => {
       });
     }
 
-    const authClient = getAuth();
+    const authClient = getFirebaseAdminAuth();
+    if (!authClient) {
+      return res.status(503).json({
+        success: false,
+        message: 'Firebase admin not initialized. Google sign-in is temporarily unavailable.'
+      });
+    }
+
     const decodedToken = await authClient.verifyIdToken(idToken);
 
     const email = decodedToken.email?.toLowerCase();
