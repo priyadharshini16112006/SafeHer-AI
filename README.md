@@ -156,4 +156,4 @@ The system combines Artificial Intelligence, Machine Learning, Natural Language 
 
 ## Conclusion
 
-SafeHer AI is an intelligent women safety platform that combines Artificial Intelligence, Machine Learning, predictive analytics, and real-time monitoring to improve women's safety. The platform helps users identify risks, plan safer routes, receive emergency assistance, and stay connected with their community. 
+SafeHer AI is an intelligent women safety platform that combines Artificial Intelligence, Machine Learning, predictive analytics, and real-time monitoring to improve women's safety. The platform helps users identify risks, plan safer routes, receive emergency assistance, and stay connected with their community.
